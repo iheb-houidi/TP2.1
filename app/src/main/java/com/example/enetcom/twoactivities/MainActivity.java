@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, SecondActivity.class);
         intent.putExtra(EXTRA_MESSAGE, message);
         Log.d(LOG_TAG, "Button clicked!");
-        startActivity(intent);
         startActivityForResult(intent, TEXT_REQUEST);
     }
     @Override
